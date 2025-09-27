@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="styles.css">
 
     <!-- TO DO: Add the picturefill code here -->
+    <script>
+        // Picture element HTML5 shiv
+        document.createElement( "picture" );
+    </script>
+    <script src="picturefill.js" async></script>
 </head>
 
 <body id="top">
@@ -35,7 +40,16 @@
             <h2>Responsive Images for Resolution Switching</h2>
 
             <!-- TO DO: Add the responsive images for resolution switching here -->
-
+            <img srcset="images/resolution-switching-sm.png 1x,
+                        images/resolution-switching-med.png 2x,
+                        images/resolution-switching-lg.jpg 3x"
+                    sizes="(max-width: 450px) 300px,
+                            (max-width: 699px) 500px,
+                            (min-width: 700px) 800px"
+                    src="images/resolution-switching-sm.png"
+                    alt="A dark gray backpack with brown leather accents and a top handle"
+                    width="300"
+                    height="300">
         </section>
     </main>
 
