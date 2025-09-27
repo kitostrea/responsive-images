@@ -4,14 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Responsive Images Examples</title>
-    <!-- TO DO: Add your name to the meta author tag -->
     <meta name="author" content="Kit Ostrea">
     <meta name="description" content="Code examples showing how to add responsive images to a website for art direction or for resolution switching">
 
     <link rel="stylesheet" href="styles.css">
 
     <!-- TO DO: Add the picturefill code here -->
-    
 </head>
 
 <body id="top">
@@ -25,7 +23,12 @@
 
 
             <!-- TO DO: Add the responsive images for art direction here -->
-
+             <picture>
+                <source media="(max-width: 600px)" width="485" height="273" srcset="images/art-direction-sm.png">
+                <source media="(max-width: 999px)" width="768" height="410" srcset="images/art-direction-med.png">
+                <source media="(min-width:1000px)" width="1400" height="810" srcset="images/art-direction-lg.jpg">
+                <img src="images/art-direction-lg.png" alt="" width="1440" height="810">
+             </picture>
         </section>
 
         <section>
